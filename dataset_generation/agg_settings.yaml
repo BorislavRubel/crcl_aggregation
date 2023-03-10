@@ -1,0 +1,23 @@
+primary_data_dir: "/mnt/Swift/Data/DRTED/DRTEDv5/DS22v0_creatinine/icu"
+agg_output_dir: "/mnt/Swift/Data/DRTED/DRTEDv5/DS22v0_creatinine/creatinine_aggs"
+
+labeled_excel_file_dir: "/mnt/Swell/Users/brubel/projects/creatinine/dataset_generation/vars_info_picu_crcl.xlsx"
+
+impute_method: ['training set mean'] 
+arbitrary_impute_value: -999
+
+vitals_to_labs: ['Plasma Hemoglobin', 'Vancomycin Random Level', 'Vancomycin Peak Level', 'Vancomycin Trough Level']
+vitals_to_meds: []
+
+labs_to_vitals: [] 
+labs_to_meds: []
+
+meds_to_vitals: [] 
+meds_to_labs: []
+
+add_vitals: []
+add_meds: ['ECMO Type', 'ECMO Hours']
+add_labs: ['inotrope_score']
+
+original_cols_to_append_to_agg: ['year', 'pid', 'Creatinine_last_48_hours']
+
